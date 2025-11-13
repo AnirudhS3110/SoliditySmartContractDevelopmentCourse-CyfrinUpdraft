@@ -10,7 +10,8 @@ contract SimpleStorage {
     Person public person1 = Person(7 , "Bob");
 
     Person[] list_of_people;
-    function store(uint _fav) public {
+
+    function store(uint _fav) public virtual {
         favouriteNumber = _fav;
     }
 
@@ -20,6 +21,7 @@ contract SimpleStorage {
         return favouriteNumber;
     }
 
+  
     function addPerson(uint256 _favNumber , string memory _name) public {
         list_of_people.push(Person(_favNumber,_name));
         nameToFav[_name] = _favNumber;

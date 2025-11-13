@@ -77,7 +77,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_fav",
+						"name": "_number",
 						"type": "uint256"
 					}
 				],
@@ -100,7 +100,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/SimpleStorage.sol": "SimpleStorage"
+			"contracts/AddFiveStore.sol": "AddFiveMore"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -114,6 +114,13 @@
 		"remappings": []
 	},
 	"sources": {
+		"contracts/AddFiveStore.sol": {
+			"keccak256": "0x52f2ba1eda25bcd926211f90b47491b143ac81206172df1fe80c42a244d71e82",
+			"urls": [
+				"bzz-raw://76749f2290d567f9bd6726573f4a515981e4c7210712785de3ea0373cd4826c7",
+				"dweb:/ipfs/QmYzN5SJs6tSxKUCHcHD2nWbhZSgvutoHm46XgKQhmE97t"
+			]
+		},
 		"contracts/SimpleStorage.sol": {
 			"keccak256": "0x6ad7ff1368abd17596053a96db93aa6925599854a8de5fe4ae85801380886229",
 			"urls": [
