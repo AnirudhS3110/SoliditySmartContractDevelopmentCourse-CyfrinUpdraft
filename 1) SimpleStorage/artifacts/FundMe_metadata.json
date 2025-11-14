@@ -1,0 +1,108 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "fund",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "minUSD",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "senderList",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"fundme/contracts/Fundme.sol": "FundMe"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol": {
+			"keccak256": "0x257a8d28fa83d3d942547c8e129ef465e4b5f3f31171e7be4739a4c98da6b4f0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6d39e11b1dc7b9b8ccdabbc9be442ab7cda4a81c748f57e316dcb1bcb4a28bf9",
+				"dweb:/ipfs/QmaG6vz6W6iEUBsbHSBob5mdcitYxWjoygxREHpsJHfWrS"
+			]
+		},
+		"fundme/contracts/Fundme.sol": {
+			"keccak256": "0xa55b51a21fefefabeff1cb98c5cbfa178541624b72fb65cbb5b96521f8e19200",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://83b40a744c928a908964e6323174902b8d6f02d13a24161ee8e84a310381d6ff",
+				"dweb:/ipfs/QmcV3uVTy2pceRonhpu4ocmwf4azhKVy7Qc2kXVzBoeBCa"
+			]
+		},
+		"fundme/library/rate.sol": {
+			"keccak256": "0x53a6b1618bc4971d654be7eb82fac4e2e4f2182f254ae038525cfebc4dedf66d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://002b0017284bb49990fafa406a57e60ad2bf0d27ab7c022e1b5f4360e474f815",
+				"dweb:/ipfs/QmZBzh6MPH3kCBz6rkXRjxqGj9fSxm5LaYoKeaYtPj2jrV"
+			]
+		}
+	},
+	"version": 1
+}
