@@ -10,11 +10,11 @@ pragma solidity  ^0.8.18;
 import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol";
 import {Rate} from "../library/rate.sol";
 
-
+error notOwner();
 contract FundMe {
     using Rate for uint256;
     uint256 public minUSD = 5e18;
-    address public owner;
+    address public immutable i_owner;
     address[] public senderList;
     mapping (address senderAdd => uint256 amt) senderToAmt;
     // Function to get fund from the user
@@ -32,7 +32,7 @@ contract FundMe {
     }
 
     constructor() {
-        owner = msg.sender;
+        i_owner = msg.sender;
     }
 
     // Function to withdraw back the user'a fund
@@ -60,7 +60,10 @@ contract FundMe {
     }
 
     modifier onlyOwner {
-        require(msg.sender == owner, "Only owner is allowed!!");
+        //require(msg.sender == i_owner, "Only owner is allowed!!");
+        if(msg.sender!= i_owner){
+            revert notOwner();
+        }
         _;
     }
 }
